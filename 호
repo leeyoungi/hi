@@ -1,0 +1,86 @@
+package second.cafe;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+public class Menu {
+
+	private List<MenuItem> arr = new ArrayList();
+
+	
+
+	public  Menu() {
+		
+		
+		arr.add(new MenuItem("아메리카노",1500));
+		arr.add(new MenuItem("카푸치노",2000));
+		arr.add(new MenuItem("카라멜마끼야또",2500));
+		arr.add(new MenuItem("에스프레소",2500));
+	  
+		System.out.println(arr.get(0));
+		System.out.println(arr.get(1));
+		System.out.println(arr.get(2));
+		System.out.println(arr.get(3));
+	}
+	
+	
+
+}
+
+
+
+package second.cafe;
+
+public class MenuItem {
+	
+	private String name;
+	private int price;
+  
+	
+	
+	public MenuItem(String name, int price) {
+		this.name = name;
+		this.price = price;
+	}
+ public MenuItem() {
+	 
+ }
+	public String getName() {
+		return name;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+	public String toString() {
+		return String.format("%s는 %,d원 입니다.", name,price);
+	}
+
+}
+
+
+
+
+
+package second.cafe;
+
+public class OrderMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		 * MenuItem mi=new MenuItem("아메리카노",1500); System.out.println(mi); MenuItem
+		 * mi2=new MenuItem("카푸치노",2000); System.out.println(mi2);
+		 */
+		
+		Menu menu=new Menu();
+	}
+
+}
+
+
+
+
+
+
